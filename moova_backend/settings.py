@@ -116,13 +116,15 @@ WSGI_APPLICATION = 'moova_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'moova',
-        'USER':'usman',
-        'PASSWORD':'usman123',
-        'HOST': 'localhost',
+        'NAME': 'heroku_7c85b7bcbfa54f5',
+        'USER':'b216a7972c2655',
+        'PASSWORD':'67837957',
+        'HOST': 'us-cdbr-east-02.cleardb.com',
         'PORT':'3306'
     }
 }
+
+
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:4200"
