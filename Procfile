@@ -1,0 +1,1 @@
+web: gunicorn moova_backend.wsgi
