@@ -27,7 +27,7 @@ SECRET_KEY = '&63t4-w4=gl+g-0@g$*2rkpszax-ap5m+3)5^tca&7@)v4#x-+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['moova-backend.herokuapp.com', 'localhost', 'mymoova.herokuapp.com']
+ALLOWED_HOSTS = ['moova-backend.herokuapp.com', 'localhost', 'mymoova.herokuapp.com', '0.0.0.0']
 
 
 # Application definition
@@ -125,11 +125,13 @@ DATABASES = {
 }
 
 
-
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:4200"
+    "http://localhost:4200",
+    "https://mymoova.herokuapp.com"
 ]
 
+ 
+#CORS_ORIGIN_ALLOW_ALL = True
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
